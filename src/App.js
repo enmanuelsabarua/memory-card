@@ -1,8 +1,12 @@
+import Gameboard from "./component/Gameboard";
+import Header from "./component/Header";
+
 function App() {
   return (
-    <div>
-
-    </div>
+    <>
+      <Header />
+      <Gameboard />
+    </>
   );
 }
 
