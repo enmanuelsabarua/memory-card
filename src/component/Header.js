@@ -1,4 +1,6 @@
-function Header() {
+import { useState } from "react";
+
+function Header({ score, bestScore }) {
     return (
         <>
           <header>
@@ -7,8 +9,8 @@ function Header() {
             <p>Get points by clicking on an image but don't click on any more than once!</p>
     
             <div className="scores">
-              <p>Score: </p>
-              <p>Best Sore: </p>
+              <p>Score: {score}</p>
+              <p>Best Sore: {bestScore}</p>
             </div>
           </header>
         </>

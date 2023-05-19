@@ -1,9 +1,10 @@
+import '../styles/Card.css';
 
 function Card({ characterName, shuffle, charactersNames }) {
     return (
         <div>
-            <div className="img" onClick={() => shuffle(charactersNames)}>
-                <img src={`../imgs/${characterName}.jpg`} alt="Anime Character" />
+            <div className="img">
+                <img src={`../imgs/${characterName}.jpg`} alt="Anime Character" id={characterName} onClick={(e) => shuffle(e, charactersNames)}/>
             </div>
 
             <h2>{characterName.replace('-', ' ')}</h2>
