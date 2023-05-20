@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.8afcbe54.css",
+    "main.js": "/memory-card/static/js/main.86dc9e78.js",
+    "static/media/JapanBentoDemoVersionRegular-nRWAJ.otf": "/memory-card/static/media/JapanBentoDemoVersionRegular-nRWAJ.7a0d7c49457e3862d4df.otf",
+    "index.html": "/memory-card/index.html",
+    "main.8afcbe54.css.map": "/memory-card/static/css/main.8afcbe54.css.map",
+    "main.86dc9e78.js.map": "/memory-card/static/js/main.86dc9e78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8afcbe54.css",
+    "static/js/main.86dc9e78.js"
+  ]
+}
