@@ -1,8 +1,27 @@
+.card {
+    background-color: #E57C23;
+    padding: 10px; 
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.52);
+    transition: .3s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px -7px #E8AA42;
+    transform: scale(1.02);
+}
+
 .img {
     display: block;
 }
 
 .img img {
-    width: 300px;
+    width: 270px;
+    border-radius: 15px;
+}
 
+.card h2 {
+    margin: 10px 0;
 }

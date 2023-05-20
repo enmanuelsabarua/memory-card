@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './styles/App.css';
 import images from "./imgs";
 import Gameboard from "./component/Gameboard";
 import Header from "./component/Header";
@@ -11,6 +12,12 @@ function App() {
     
     // Snippet from stack overflow 
     function shuffle(e, array) {
+      if (score === 12) {
+        const winning = document.querySelector('.winning');
+        winning.textContent = 'You Win, Congrats!!!';
+        return;
+      }
+
       let modifiedArr = [...array]
       let currentIndex = modifiedArr.length, randomIndex;
       
@@ -50,6 +57,9 @@ function App() {
     <>
       <Header nameArr={nameArr} bestScore={bestScore} score={score}/>
       <Gameboard shuffle={shuffle} charactersNames={nameArr} setSelectedCharactes={selectedCharacters} nameArr={nameArr}/>
+      <footer className="footer">
+        <p>Copyright &copy; enmanuelsabarua <i className="fa-brands fa-github"></i> 2023</p>
+      </footer>
     </>
   );
 }

@@ -2,7 +2,7 @@ import '../styles/Card.css';
 
 function Card({ characterName, shuffle, charactersNames }) {
     return (
-        <div>
+        <div className='card'>
             <div className="img">
                 <img src={`../imgs/${characterName}.jpg`} alt="Anime Character" id={characterName} onClick={(e) => shuffle(e, charactersNames)}/>
             </div>
